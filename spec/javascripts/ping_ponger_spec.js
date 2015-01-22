@@ -31,4 +31,16 @@ describe('ping ponger', function() {
 
     expect(scoreNode2.innerText).toEqual('1');
   })
+
+  it('displays "you win" when player accumulates 21 points', function() {
+    var scoreNode = document.querySelector('#score1');
+    var buttonNode = document.querySelector('#player1');
+    scoreNode.innerText = 20;
+    buttonNode.click();
+
+    expect(scoreNode.innerText).toEqual('You Win');
+  })
+
+  it()
+
 });
